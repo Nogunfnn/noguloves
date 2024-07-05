@@ -9,7 +9,7 @@ export interface Options {
 }
 
 const defaultOptions: Options = {
-  priority: ["filesystem", "frontmatter", "git"], // 우선순위를 변경하여 파일 시스템을 가장 먼저 확인
+  priority: ["frontmatter", "git","filesystem"], // 우선순위를 변경하여 파일 시스템을 가장 먼저 확인
 }
 
 function coerceDate(fp: string, d: any): Date {
