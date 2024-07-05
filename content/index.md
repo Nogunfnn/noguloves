@@ -6,11 +6,9 @@ date:
 ---
 
 ---
-
 - [[essay]]
 - [[coffee]]
 - [[branding]]
-
 ---
 
 
