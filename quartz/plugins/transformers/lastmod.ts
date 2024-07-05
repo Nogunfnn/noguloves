@@ -9,7 +9,7 @@ export interface Options {
 }
 
 const defaultOptions: Options = {
-  priority: ["frontmatter", "git", "filesystem"],
+  priority: ["filesystem", "frontmatter", "git"], // 우선순위를 변경하여 파일 시스템을 가장 먼저 확인
 }
 
 function coerceDate(fp: string, d: any): Date {
@@ -47,7 +47,7 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options> | und
             for (const source of opts.priority) {
               if (source === "filesystem") {
                 const st = await fs.promises.stat(fullFp)
-                created ||= st.birthtimeMs
+                created ||= st.birthtimeMs // 파일 시스템에서 생성 날짜를 설정
                 modified ||= st.mtimeMs
               } else if (source === "frontmatter" && file.data.frontmatter) {
                 created ||= file.data.frontmatter.date as MaybeDate
