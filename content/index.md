@@ -14,6 +14,4 @@ date:
 - [circles🎵](https://music.apple.com/us/album/circles-deluxe/1501337739?l=ko)
 - [power andre 99🎵](https://music.apple.com/us/album/power-andre-99/1722036147?l=ko)
 - [Birth of the Cool🎷](https://music.apple.com/us/album/birth-of-the-cool/1440951879?l=ko)
-
-
 ---
